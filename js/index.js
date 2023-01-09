@@ -12,7 +12,7 @@ function exchange(currencies){
 }
 function getCurrencyList(e){
     e.preventDefault();
-    const urlAddress = `http://api.nbp.pl/api/exchangerates/rates/a/${selectedCurrency}/`;
+    const urlAddress = `https://api.nbp.pl/api/exchangerates/rates/a/${selectedCurrency}/`;
 
     document.querySelector('.loader').classList.remove('invisible');
     fetch(urlAddress)
